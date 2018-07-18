@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>McFadyen Digital - UI test</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body id="body"> 
+
+    	<!-- Navigation -->
+		<nav class="navbar navbar-inverse" role="navigation">
+	        <div class="navbar-header">
+	            <a class="navbar-brand" href="/">McFadyen Digital - UI test</a>
+	            <button onclick="highContrastMode()" class="pull-right btn navbar-btn"><i class="glyphicon glyphicon-text-background"></i></button>
+	            <button onclick="biggerTextMode()" class="pull-right btn navbar-btn"><i class="glyphicon glyphicon-text-size"></i></button>
+	        </div>
+		</nav>
+
+		<!--[if lt IE 7]>
+		      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		  <![endif]-->
+
+		<!-- Page Content -->
+		<div class="container">
+	
+			<div class="row">
+				<h3 id="#employeeName"></h3>
+			</div>
+			<!-- /.row -->
+		    <div class="row">
+		        <div id="#employeePicture" class="col-md-2">
+		        </div>
+		        <div class="col-md-8">
+					<b>Full name:</b> <span id="#employeeFullName"></span><br>
+					<b>Gender:</b> <span id="#employeeGender"></span><br>
+					<b>Phone Number:</b> <span id="#employeePhoneNumber"></span><br>
+					<b>Company:</b> <span id="#employeeCompany"></span><br>
+					<b>Address:</b> <span id="#employeeAddress"></span><br>
+		        </div>
+		    </div>
+		    <!-- /.row -->
+		    <div class="row mt-20">
+				<b>About Employee:</b><br>
+				<p id="#employeeAbout"></p>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<b>Employee was registred in the system:</b><br>
+				<p id="#employeeRegistered"></p>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div id="googleMap" style="width: 500px; height: 250px;"></div>
+			</div>
+			<!-- /.maps -->
+		</div>
+
+    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfBIQ23i2HyuRaL5G4cLkqjoQGD94V2yM"></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/employee.js"></script>
+</html>
